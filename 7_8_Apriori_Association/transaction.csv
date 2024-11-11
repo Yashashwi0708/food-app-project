@@ -1,0 +1,9 @@
+milk,bread,eggs,diaper,beer
+milk,bread,,diaper,
+milk,,eggs,,
+milk,bread,,,beer
+,,eggs,diaper,
+milk,,eggs,diaper,beer
+,bread,eggs,,
+milk,bread,,,beer
+milk,bread,eggs,diaper,

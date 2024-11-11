@@ -1,0 +1,9 @@
+
+Frequent 1 - item set:
+{bread} 6
+{diaper} 5
+{eggs} 6
+{milk} 7
+
+Frequent 2 - item set:
+{bread milk} 5

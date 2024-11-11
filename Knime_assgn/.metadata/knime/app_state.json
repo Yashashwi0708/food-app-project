@@ -1,0 +1,59 @@
+{
+  "version" : "5.3.2.v202409051351",
+  "projects" : [ ],
+  "mostRecentlyUsedProjects" : [ {
+    "name" : "DensityB_clustering",
+    "timeUsed" : "2024-09-29T22:07:35.111626677+05:30",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "Clustering/DensityB_clustering"
+    }
+  }, {
+    "name" : "5_number_summary",
+    "timeUsed" : "2024-10-13T12:09:55.676353022+05:30",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "5_number_summary"
+    }
+  }, {
+    "name" : "Normalization",
+    "timeUsed" : "2024-10-13T12:10:05.44860313+05:30",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "Normalization"
+    }
+  }, {
+    "name" : "Apriori_algo",
+    "timeUsed" : "2024-10-13T12:13:33.667245136+05:30",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "Apriori_algo"
+    }
+  }, {
+    "name" : "Hierarchical_Clustering",
+    "timeUsed" : "2024-10-13T12:18:08.545418515+05:30",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "Clustering/Hierarchical_Clustering"
+    }
+  }, {
+    "name" : "Partition_Clustering",
+    "timeUsed" : "2024-10-13T12:22:25.485865667+05:30",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "Clustering/Partition_Clustering"
+    }
+  } ]
+}
