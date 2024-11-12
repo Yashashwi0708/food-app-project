@@ -1,9 +1,14 @@
 
 Frequent 1 - item set:
+{beer} 4
 {bread} 6
 {diaper} 5
 {eggs} 6
 {milk} 7
 
 Frequent 2 - item set:
+{beer milk} 4
 {bread milk} 5
+{diaper eggs} 4
+{diaper milk} 4
+{eggs milk} 4

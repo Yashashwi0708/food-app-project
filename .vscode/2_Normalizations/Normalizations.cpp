@@ -64,14 +64,7 @@ vector<vector<string>> readCSV(const string& filename) {
 int main() {
     string filename = "samsung_sales.csv"; 
 
-
     vector<vector<string>> csvData = readCSV(filename);
-
-    // if (csvData.empty()) {
-    //     cerr << "Error: No data read from the CSV file." << endl;
-    //     return 1;
-    // }
-
     vector<double> samsungSales;
 
     for(auto i:csvData){
@@ -104,4 +97,30 @@ int main() {
     }
 
     return 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }

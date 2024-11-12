@@ -15,7 +15,7 @@ double calculatePrior(string target, vector<vector<string>>& dataset, int colInd
             count++;
         }
     }
-    return dataset.size() > 0 ? count / dataset.size() : 0.0;  // Prevent division by zero
+    return dataset.size() > 0 ? count / dataset.size() : 0.0;
 }
 
 double likelihood(string feature, string target, int featureIndex, int targetIndex, vector<vector<string>>& dataset) {
