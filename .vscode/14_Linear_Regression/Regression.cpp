@@ -25,7 +25,6 @@ void readCSV(const string &filename, vector<double> &X, vector<double> &Y) {
 int main() {
     vector<double> X, Y;
 
-
     string filename = "Linear_Regression.csv";
     readCSV(filename, X, Y);
     int n = X.size();

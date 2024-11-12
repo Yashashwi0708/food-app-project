@@ -60,10 +60,7 @@ void printMatrix(const vector<vector<double>>& matrix, const vector<int>& indice
     for (int i = 0; i < n; i++) {
         cout << indices[i] << "\t";
         for (int j = 0; j < n; j++) {
-            if (matrix[i][j] == numeric_limits<double>::max())
-                cout << "INF\t";
-            else
-                cout << matrix[i][j] << "\t";
+            cout << matrix[i][j] << "\t";
         }
         cout << endl;
     }
@@ -153,9 +150,7 @@ int main() {
 
     vector<vector<double>> dist_Matrix = initializeDist_Matrix(unitsSold);
 
-    int Clust_nums;
-    cout << "Enter the number of clusters: ";
-    cin >> Clust_nums;
+    int Clust_nums=1;
 
     agglomerativeClustering(dist_Matrix, Clust_nums);
     return 0;

@@ -77,11 +77,7 @@ int main() {
     string filename = "box_Plot.csv";
     readCSV(filename, data);
 
-    if (data.size()>0) {
-        calculateFiveNumberSummary(data);
-    } else {
-        cout<<"No data available in the CSV file."<<endl;
-    }
+    calculateFiveNumberSummary(data);
 
     return 0;
 }
