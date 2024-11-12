@@ -11,8 +11,7 @@ vector<vector<string>> readCSV(const string& filename) {
     vector<vector<string>> data;
     ifstream file(filename);
     string line;
-
-    // getline(file, line);
+   
     while (getline(file, line)) {
         stringstream ss(line);
         string value;
@@ -29,12 +28,21 @@ vector<vector<string>> readCSV(const string& filename) {
 }
 
 int main() {
-    vector<vector<string>> csvData = readCSV("td_Weight.csv");
+    vector<vector<string>> temp = readCSV("td_Weight.csv");
 
-    int numColumns = csvData[0].size();
+    int numColumns = temp[0].size();
     vector<double> columnTotals(numColumns - 1, 0.0); 
-    vector<double> rowTotals(csvData.size(), 0.0); 
+    vector<double> rowTotals(temp.size(), 0.0); 
     double grandTotal = 0.0; 
+
+    vector<vector<string>> csvData;
+    vector<string> header;
+
+    header = temp[0];
+    for(int i = 1; i < temp.size(); i++) {
+        csvData.push_back(temp[i]);
+    }
+
 
     for (int i = 0; i < csvData.size(); ++i) {
         double rowSum = 0.0;
@@ -47,11 +55,13 @@ int main() {
         grandTotal += rowSum; 
     }
 
+
+
     cout << fixed << setprecision(2);
-    cout << left << setw(15) << "Region";
-    for (int j = 1; j < numColumns; ++j) {
-        cout << setw(15) << "D-weight " + to_string(j);
-        cout << setw(15) << "T-weight " + to_string(j);
+    cout << left << setw(20) << header[0];
+    for (int j = 1; j < header.size(); ++j) {
+        cout << setw(30) << "D-weight " + header[j];
+        cout << setw(15) << "T-weight " + header[j];
     }
     cout << endl;
     cout << string(15 + 30 * (numColumns - 1), '-') << endl;
